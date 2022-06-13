@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <h1>Formulario</h1>
+    <h2>Ingrese los siguientes datos por favor: </h2><br><br>
+    <form action= "" id="form" class="form">
+        
+      <div id="grupo__name" class="form__grupo">
+             <label for="name" class="form__label">Ingresa tu nombre completo: </label>
+             <div class="form__grupo-input ">
+                 <input id="name" type="text" name="name" class="form__input" placeholder="Juan Perez">
+             </div>
+             <p class="form__input-error">No puedes ingresar numeros ni caracteres especiales</p>
+         </div>
+
+        <div id="grupo__id" class="form__grupo">
+            <label for="id" class="form__label">Ingresa tu ID: </label>
+            <div class="form__grupo-input">
+                <input id="id" type="text" name="id" class="form__input" placeholder="1, 2, 3, 4, ...">
+            </div>
+            <p class="form__input-error">Solo puedes ingresar uno o dos numeros</p>
+        </div>
+
+        <div id="grupo__age" class="form__grupo">
+            <label for="age" class="form__label">Ingresa tu edad: </label>
+            <div class="form__grupo-input">
+                <input id="age" type="text" name="age" class="form__input" placeholder="23, 45, 19, ...">
+            </div>
+            <p class="form__input-error">Solo puedes ingresar uno o dos numeros</p>
+        </div>
+
+        <div id="grupo__email" class="form__grupo">
+            <label for="email" class="form__label">Ingresa tu correo electr&oacute;nico: </label>
+            <div class="form__grupo-input">
+                <input id="email" type="text" name="email" class="form__input" placeholder="juan@gmail.com">
+            </div>
+            <p class="form__input-error">No puedes ingresar numeros</p>
+        </div>
+
+        <div id="grupo__password" class="form__grupo">
+            <label for="password" class="form__label">Ingresa tu contraseña: </label>
+            <div class="form__grupo-input">
+                <input id="password" type="text" name="password" class="form__input" placeholder="12%Ds$">
+            </div>
+            <p class="form__input-error">Tiene que ser de 4 a 12 digitos</p>
+        </div>
+
+        <div id="grupo__password2" class="form__grupo">
+          <label for="password2" class="form__label">Confirma tu contraseña: </label>
+          <div class="form__grupo-input">
+               <input id="password2" type="text" name="password2" class="form__input" placeholder="12%Ds$">
+          </div>
+          <p class="form__input-error">Las contraseñas no coinciden</p>
+        </div>
+
+        <div class="form__grupo" id="grupo__terminos">
+            <label class="form__label" for="">
+                <input class="form__checkbox" name="terminos" id="terminos" type="checkbox">
+                Acepto términos y condiciones</label></input>
+            </label>
+        </div>
+
+        <div class="form__message" id="form__message">
+          <p><i class="fa-solid fa-triangle-exclamation"></i> <b> ERROR:</b> Selecciona la casilla </p>
+        </div>
+
+        <div class="form__grupo form__grupo-button-enviar">
+            <button type="submit" class="form__button" >Enviar</button>
+            <p class="form__message-exito" id="form__message-exito">Se ha enviado exitosamente</p>
+        </div>
+    </form>
+  </main>
+  
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/98cec3a2a7.js" crossorigin="anonymous"></script>
+</body>
+</html>

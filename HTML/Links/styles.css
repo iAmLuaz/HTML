@@ -1,0 +1,27 @@
+h1{
+    color: #ffbe0b;
+}
+
+p{
+    color: #ff006e;
+}
+
+body{
+    background-color: #fb5607;
+}
+
+a:link, a:visited id{
+    color:#16111f;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    background-color:#ff006e;
+}
+
+a:hover, a:active{
+    color:#9b8ab4;
+    text-decoration: underline;
+    padding: 20px;
+    text-align: center;
+    background-color:#caa8b7;
+}
