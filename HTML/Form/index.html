@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formularios</h1>
+    <div>
+        <form action="my_server" method="post" target="_self">
+            <fieldset>
+                <legend>Datos Personales:</legend>
+
+                <div>
+                    <label for=""></label>
+                </div>
+
+                <div>
+                    <label for="name">Ingresa tu nombre:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Carlos" required="true">
+                </div>
+    
+                <div>
+                    <label for="age">Ingresa tu edad:</label><br>
+                    <input type="text" id="age" name="age" placeholder="25">
+                </div>
+    
+                <div>
+                    <label for="email">Ingresa tu correo:</label><br>
+                    <input type="text" id="email" name="email" placeholder="l.va@gmail.com">
+                </div>
+    
+                <div>
+                    <label for="pass">Ingresa tu contraseña:</label><br>
+                    <input type="password" id="pass" name="pass" placeholder="hola123">
+                </div>
+    
+                <div>
+                    <label for="">Selecciona tu sexo:</label><br>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Femenino</label>
+                    <input type="radio" id="male" name="sex" value="male">
+                    <label for="male">Masculino</label>
+                </div>
+    
+                <div>
+                    <label for="school">Escuela de procedencia:</label><br>
+                    <select name="school" id="school">
+                        <option value="cecyt5">CECyT 5: Benito Juarez</option>
+                        <option value="cecyt4">CECyT 4: Licenciao</option>
+                        <option value="cecyt3">CECyT 3: Adolfo Lopez</option>
+                        <option value="cecyt2">CECyT 2: Chabelo</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="terms">Ingresa un comentario: </label><br>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Escribe tu respuesta"></textarea>
+                </div>
+    
+                <div>
+                    <label for="terms">Aceptas los términos y condiciones</label>
+                    <input type="checkbox" id="terms" name="terms" required="true">
+                </div>
+    
+                <div>
+                    <br><input type="submit" value="Enviar">
+                    <input type="reset" name="" id="">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
